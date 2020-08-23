@@ -1,0 +1,34 @@
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .toogle::before {
+  transform: translateX(0);
+}
+
+.toogle {
+  width: 47px;
+  height: 24px;
+  border-radius: 25px;
+  padding: 3px;
+  background: var(--toogle-color);
+  &::before {
+    display: block;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: transform $animation-time, background-color $animation-time;
+    transform: translateX(22px);
+    background-color: var(--bg-color);
+  }
+  &:active {
+    background: var(--toogle-state-color);
+  }
+  @include media(desktop) {
+    &:hover {
+      cursor: pointer;
+      background: var(--toogle-state-color);
+    }
+  }
+}

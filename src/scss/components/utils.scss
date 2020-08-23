@@ -1,0 +1,7 @@
+.separator {
+  transition: border-top $animation-time;
+  border-top: 1px solid var(--text2-color);
+  @include media(desktop) {
+    display: none;
+  }
+}

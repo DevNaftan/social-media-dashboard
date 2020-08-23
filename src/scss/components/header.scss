@@ -1,0 +1,46 @@
+.header {
+  padding-bottom: 70px;
+  border-radius: 0 0 20px 20px;
+  transition: background-color $animation-time;
+  background-color: var(--topbg-color);
+  @include media(desktop) {
+    display: flex;
+    padding-bottom: 130px;
+    justify-content: space-between;
+  }
+}
+
+.title-container {
+  padding: 35px 0 25px 0;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 1.72em;
+  transition: color $animation-time;
+  color: var(--text1-color);
+  @include media(desktop) {
+    font-size: 1.95em;
+  }
+}
+
+.followers {
+  transition: color $animation-time;
+  color: var(--text2-color);
+}
+
+.mode-container {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
+    justify-content: flex-end;
+  }
+}
+
+.mode-title {
+  margin-right: 15px;
+  transition: color $animation-time;
+  color: var(--text2-color);
+}

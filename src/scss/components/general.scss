@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  font-size: $size;
+  transition: background-color $animation-time;
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: inherit;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 25px;
+  justify-content: inherit;
+}

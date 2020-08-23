@@ -1,0 +1,88 @@
+.general-card {
+  width: 100%;
+  max-width: 325px;
+  padding: 32px 20px 25px 20px;
+  margin: 0 auto 24px auto;
+  position: relative;
+  text-align: center;
+  border-radius: $radius;
+  overflow: hidden;
+  user-select: none;
+  transition: background-color $animation-time;
+  background-color: var(--bgcard-color);
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__main {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  &__footer {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:nth-child(1)::before {
+    background-color: $facebook-color;
+  }
+  &:nth-child(2)::before {
+    background-color: $twitter-color;
+  }
+  &:nth-child(3)::before {
+    background-image: $instagram-color;
+  }
+  &:nth-child(4)::before {
+    background-color: $youtube-color;
+  }
+  &:active {
+    background-color: var(--bgcard-state-color);
+  }
+  @include media(desktop) {
+    &:hover {
+      cursor: pointer;
+      background-color: var(--bgcard-state-color);
+    }
+  }
+}
+
+.today-card {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  width: 100%;
+  max-width: 325px;
+  height: 125px;
+  margin: 0 auto 16px auto;
+  padding: 25px 30px 25px 25px;
+  border-radius: $radius;
+  user-select: none;
+  transition: background-color $animation-time;
+  background-color: var(--bgcard-color);
+  &__stats {
+    display: flex;
+    align-self: end;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &:active {
+    background-color: var(--bgcard-state-color);
+  }
+  @include media(desktop) {
+    &:hover {
+      cursor: pointer;
+      background-color: var(--bgcard-state-color);
+    }
+  }
+}

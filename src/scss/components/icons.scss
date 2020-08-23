@@ -1,0 +1,40 @@
+.sn-logo {
+  width: 20px;
+  height: 20px;
+  justify-self: end;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background-image: url('../assets/images/icon-facebook.svg');
+}
+
+.twitter {
+  background-image: url('../assets/images/icon-twitter.svg');
+}
+
+.instagram {
+  background-image: url('../assets/images/icon-instagram.svg');
+}
+
+.youtube {
+  background-image: url('../assets/images/icon-youtube.svg');
+}
+
+.sn-trend {
+  width: 8px;
+  height: 8px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sn-trend--up {
+  background-image: url('../assets/images/icon-up.svg');
+}
+
+.sn-trend--down {
+  background-image: url('../assets/images/icon-down.svg');
+}

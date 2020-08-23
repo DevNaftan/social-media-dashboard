@@ -1,0 +1,96 @@
+.main {
+  margin-top: -65px;
+  @include media(desktop) {
+    margin-top: -130px;
+  }
+}
+
+.general-stats {
+  padding: 21px 0;
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+  @include media(desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.today-stats {
+  margin-bottom: 45px;
+  &__title {
+    margin-bottom: 27px;
+    font-size: 1.73em;
+    transition: color $animation-time;
+    color: var(--text2-color);
+    @include media(tablet) {
+      grid-column: 1 / 3;
+      margin-bottom: 15px;
+    }
+    @include media(desktop) {
+      grid-column: 1 / 5;
+    }
+  }
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+  @include media(desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.sn-user {
+  margin-left: 7.5px;
+  font-weight: 700;
+  font-size: .85em;
+  transition: color $animation-time;
+  color: var(--text2-color);
+}
+
+.sn-feedback {
+  font-size: 3.75em;
+  transition: color $animation-time;
+  color: var(--text1-color);
+}
+
+.sn-feedback--today {
+  font-size: 2.25em;
+  line-height: .85em;
+  align-self: end;
+}
+
+.sn-feedback-title {
+  letter-spacing: .35em;
+  font-size: .9em;
+  transition: color $animation-time;
+  color: var(--text2-color);
+}
+
+.sn-trend-count {
+  margin-left: 5px;
+  font-size: .85em;
+  font-weight: 700;
+}
+
+.sn-trend-count--up {
+  color: $up-color;  
+}
+
+.sn-trend-count--down {
+  color: $down-color;  
+}
+
+.sn-section-title {
+  justify-self: start;
+  align-self: start;
+  font-size: .97em;
+  font-weight: 700;
+  line-height: 1.7em;
+  transition: color $animation-time;
+  color: var(--text2-color);
+}
