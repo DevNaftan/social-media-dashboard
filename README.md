@@ -1,5 +1,5 @@
 # Social media dashboard
-A Social media dashboard design with dark mode
+A Responsive social media dashboard design with dark mode
 
 ### Technologies used
 * HTML5
