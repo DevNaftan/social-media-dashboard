@@ -1,13 +1,11 @@
 const $checkbox = document.getElementById('checkbox')
 
-function mode(event) {
+function theme(event) {
   if (event.target.checked) {
-    document.body.classList.remove('dark')
-    document.body.classList.add('light')
+    document.documentElement.setAttribute('data-theme', 'light')
   } else {
-    document.body.classList.remove('light')
-    document.body.classList.add('dark')
+    document.documentElement.setAttribute('data-theme', 'dark')
   }
 }
 
-$checkbox.addEventListener('change', mode)
+$checkbox.addEventListener('change', theme)

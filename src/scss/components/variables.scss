@@ -14,8 +14,8 @@ $facebook-color: hsl(208, 92%, 53%);
 $twitter-color: hsl(203, 89%, 53%);
 $instagram-color: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 $youtube-color: hsl(348, 97%, 39%);
-// Light
-.light {
+// Light theme
+html[data-theme='light'] {
   --toogle-color: hsl(230, 22%, 74%);
   --toogle-state-color: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --bg-color: hsl(0, 0%, 100%);
@@ -25,12 +25,12 @@ $youtube-color: hsl(348, 97%, 39%);
   --text1-color: hsl(230, 17%, 14%);
   --text2-color: hsl(228, 12%, 44%);
 }
-// Dark
-.dark {
+// Dark theme
+html[data-theme='dark'] {
   --toogle-color: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --toogle-state-color: hsl(230, 22%, 74%);
   --bg-color: hsl(230, 17%, 14%);
-  --topbg-color: 	hsl(232, 19%, 15%);
+  --topbg-color: hsl(232, 19%, 15%);
   --bgcard-color: hsl(228, 28%, 20%);
   --bgcard-state-color: hsl(228, 26%, 27%);
   --text1-color: hsl(0, 0%, 100%);
